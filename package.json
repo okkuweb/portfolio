@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Oskari's portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "clean": "rm -r -f ./dist/* && cp -r -f ./src/* ./dist/",
+    "css:build": "rm -f ./dist/css/* && node-sass ./src/css/style.scss | cleancss > ./dist/css/style.css",
+    "js:build": "rm -f ./dist/js/* && cp -f ./src/js/* ./dist/js/ && babel ./dist/js/main.js --presets es2015 -o ./dist/js/prebundle.js -s && browserify ./dist/js/prebundle.js -o ./dist/js/bundle.js",
+    "js:uglify": "uglifyjs ./dist/js/bundle.js -c -o ./dist/js/bundle.js",
+    "build": "npm run clean && npm run css:build && npm run js:build"
+  },
+  "keywords": [
+    "website",
+    "web",
+    "html",
+    "css",
+    "portfolio",
+    "javascript"
+  ],
+  "author": "Oskari Saari",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "browserify": "^13.1.0",
+    "clean-css": "^3.4.19",
+    "node-sass": "^3.10.0",
+    "uglify-js": "^2.7.3",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
