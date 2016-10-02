@@ -1,5 +1,8 @@
 - Ahh... Fixed the damn build system finally. And it is amazing.
 - Try the build system on windows nodejs
 - Separate index.php into header index and footer (maybe sidebar?)
+<<<<<<< HEAD
 - Add a script to backup files to "stuff"
 - Figure out how to git push without username and password
+=======
+>>>>>>> d2ee29ef3a3e4619870393067d74b39b67a09ea1
