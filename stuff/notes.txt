@@ -1,0 +1,3 @@
+- Ahh... Fixed the damn build system finally. And it is amazing.
+- Try the build system on windows nodejs
+- Separate index.php into header index and footer (maybe sidebar?)
