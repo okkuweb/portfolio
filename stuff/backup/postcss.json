@@ -1,0 +1,15 @@
+{
+  "use": [
+    "lost",
+    "autoprefixer",
+    "postcss-import",
+    "postcss-simple-vars",
+    "postcss-nested",
+    "cssnano"
+  ],
+  "map": true,
+  "local-plugins": true,
+  "autoprefixer": {
+    "browsers": "> 5%"
+  }
+}

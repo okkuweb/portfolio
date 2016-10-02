@@ -60,7 +60,12 @@ textarea {
 
 
 
-
+.test-text {
+    display: flex;
+    lost-center: 20%;
+    justify-content: center;
+    color: #CCC;
+}
 
 
 

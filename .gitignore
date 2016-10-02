@@ -23,9 +23,6 @@ coverage
 # node-waf configuration
 .lock-wscript
 
-# Compiled build
-dist
-
 # Dependency directories
 node_modules
 jspm_packages
