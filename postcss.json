@@ -1,6 +1,6 @@
 {
     "input": "src/css/style.css",
-    "output": "dist/css/style.css",
+    "output": "public/css/style.css",
     "use": [
         "lost",
         "autoprefixer",

@@ -1,5 +1,7 @@
 import * as $ from "jquery";
 
+console.log("Hey here's a new thing! :D");
+
 let fasd = "haha banabanal";
 
 let asd = document.getElementById("test");

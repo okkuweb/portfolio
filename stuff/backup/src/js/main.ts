@@ -1,9 +1,15 @@
 import * as $ from "jquery";
 
-const asd = "this is a const variable";
+console.log("Hey here's a new thing! :D");
+
+let fasd = "haha banabanal";
+
+let asd = document.getElementById("test");
 
 console.log(asd);
 
-let fasd = "haha ganal";
-
 console.log($);
+
+let fasism = $("#test");
+
+console.log(fasism);
