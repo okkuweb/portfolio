@@ -13,7 +13,7 @@
     <!-- index.php -->
     <body>
 
-        <p class="test-text">Hello world! This is my website. :)</p>
+        <p id="test" class="test-text">Hello world! This is my site. Come check it out! :D</p>
         
         <!-- footer.php -->
 
