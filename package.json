@@ -16,6 +16,7 @@
     "backup": "shx rm -rf stuff/backup/* && shx cp -r public stuff/backup/ && shx cp -r src stuff/backup/",
     "watch": "npm run php:watch & npm run css:watch & npm run js:watch",
     "start": "npm run server & npm run watch",
+    "start2": "npm run server2 & npm run watch",
     "build": "npm run php && npm run css && npm run js"
   },
   "keywords": [
