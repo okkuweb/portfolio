@@ -1,3 +1,4 @@
+/* Imported css libraries */
 @import "normalize";
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
@@ -58,24 +59,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.navigation {
-    lost-utility: clearfix;
-    display: block;
-    background-color: #CCCCCC;
-    position: absolute;
-    left: 0;
-    top: 0;
-    lost-column: 1/3;
-    height: 100vh;
+@lost flexbox flex;
 
-    ul {
-        margin: 0.5em;
-        padding: 0;
-        li {
-            list-style: none;
-        }
-    }
-}
+
+
+
+
+
+
+
+
+
+
 
 
 

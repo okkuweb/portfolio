@@ -11,10 +11,11 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="navigation navigation--fullwidth">
-            <ul>
-                <li>Oh hello!</li>
-                <li>Welcome!</li>
-                <li>That's great!</li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <img src="" alt="logo">
+                <a href="navigation__frontpage">First link</a>
+                <a href="navigation__github">Second link</a>
+                <a href="navigation__contact">Third link</a>
+            </nav>
+        </header>
