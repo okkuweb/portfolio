@@ -1,7 +1,7 @@
 <?php include 'header.php' ?>
 <!-- index.php -->
 <section class="main">
-    <div class="main--cover"> <!-- Add some class describing image flair here -->
+    <div class="main--cover">
         <img src="" alt="">
         <h1>Mun portfolio jee</h1>
     </div>
