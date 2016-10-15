@@ -12,10 +12,10 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="navigation">
                 <img src="" alt="logo">
-                <a href="navigation__frontpage">First link</a>
-                <a href="navigation__github">Second link</a>
-                <a href="navigation__contact">Third link</a>
+                <a href="#">First link</a>
+                <a href="github">Second link</a>
+                <a href="contact">Third link</a>
             </nav>
         </header>

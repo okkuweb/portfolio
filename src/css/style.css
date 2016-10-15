@@ -1,58 +1,9 @@
-/* Imported css libraries */
+/* ==========================================================================
+   Imported css libraries
+   ========================================================================== */
+
 @import "normalize";
 
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
 
 /* ==========================================================================
@@ -61,36 +12,56 @@ textarea {
 
 @lost flexbox flex;
 
+$bgc: #FFFFFF;
+$text: #484748;
+$link: #553A55;
+$linkActive: #7A857B;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
+html {
+    font-size: 16px;
+    line-height: 1.4;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
+body {
+    background-color: $bgc;
 }
+
+p {
+    color: $text;
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+    &:hover {
+        color: $linkActive;
+    }
+    
+}
+
+.navigation {
+    a {
+    }
+}
+
+
+.main {
+    p {
+        color: $text;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes

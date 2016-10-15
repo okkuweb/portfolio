@@ -9,9 +9,9 @@
     <div class="main--introduction">
         <img src="" alt="">
         <h2>About ja sillee</h2>
-        <div>Elit rerum adipisci ipsa quaerat facilis! Dolorum cum voluptatem consequatur nemo voluptatibus debitis eligendi. Maxime quibusdam maiores consectetur deserunt autem in? Ad doloremque dolorem ad perspiciatis unde animi. Nostrum dolorem.
+        <p>Elit rerum adipisci ipsa quaerat facilis! Dolorum cum voluptatem consequatur nemo voluptatibus debitis eligendi. Maxime quibusdam maiores consectetur deserunt autem in? Ad doloremque dolorem ad perspiciatis unde animi. Nostrum dolorem.
             Consectetur quae quod a tempore eius quas? Perferendis voluptatem commodi enim maiores aliquam esse, earum! Nobis pariatur qui nostrum laboriosam harum cumque culpa temporibus tempore cum tempore natus consequuntur. Excepturi.
-        </div>
+        </p>
     </div>
 
     <div class="main--skills">
