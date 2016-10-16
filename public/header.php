@@ -14,8 +14,10 @@
         <header>
             <nav class="navigation">
                 <img src="" alt="logo">
-                <a href="#">First link</a>
-                <a href="github">Second link</a>
-                <a href="contact">Third link</a>
+                <a href="#">About me</a>
+                <span>/</span>
+                <a href="github">Github</a>
+                <span>/</span>
+                <a href="contact">Codepen</a>
             </nav>
         </header>

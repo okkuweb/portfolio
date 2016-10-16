@@ -13,17 +13,18 @@
 @lost flexbox flex;
 
 $bgc: #FFFFFF;
-$text: #484748;
-$link: #553A55;
-$linkActive: #7A857B;
+$text: #4C4C4C;
+$link: #4C4C4C;
+$linkActive: #87A752;
 
 html {
-    font-size: 16px;
+    font-size: 10px;
     line-height: 1.4;
 }
 
 body {
     background-color: $bgc;
+    font-size: 1.6rem;
 }
 
 p {
@@ -33,10 +34,15 @@ p {
 a {
     color: $link;
     text-decoration: none;
+    font-style: italic;
     &:hover {
         color: $linkActive;
     }
     
+}
+
+span {
+    color: $link;
 }
 
 .navigation {
