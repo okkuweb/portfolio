@@ -1,15 +1,11 @@
 {
-    "input": "src/css/style.css",
+    "input": "src/css/temp/style.css",
     "output": "public/css/style.css",
     "use": [
         "lost",
         "autoprefixer",
-        "postcss-import",
-        "postcss-simple-vars",
-        "postcss-nested",
         "cssnano"
     ],
-    "map": true,
     "local-plugins": true,
     "autoprefixer": {
         "browsers": "> 5%"

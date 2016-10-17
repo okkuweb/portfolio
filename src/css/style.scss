@@ -14,14 +14,14 @@ Author's custom styles
 /* @lost flexbox flex; */
 
 $bgc: #F2F1F0;
-$altBgc: #3C3C3C;
+$bgcAlt: #3C3C3C;
 $text: #4C4C4C;
-$darkText: #3C3C3C;
-$lightText: #F2F1F0;
-$darkerLightText: #ACA69F;
+$textDark: #3C3C3C;
+$textLight: #F2F1F0;
 $link: #87A752;
-$lightLink: #F2F1F0;
-$linkActive: #87A752;
+$linkActive: darken(#87A752, 30%);
+$linkLight: #F2F1F0;
+$linkLightActive: #87A752;
 
 /* ROOT STYLES */
 
@@ -40,7 +40,7 @@ body {
 }
 
 h2 {
-    color: $darkText;
+    color: $textDark;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 2.8rem;
 }
@@ -70,7 +70,7 @@ span {
 /* HEADER */
 
 header {
-    background-color: $altBgc;
+    background-color: $bgcAlt;
     border-bottom:0.5rem solid $text;
 }
 
@@ -78,7 +78,7 @@ header {
     lost-center: 960px;
 
     & h1 {
-        color: $lightText;
+        color: $textLight;
         lost-row: 1/1;
         text-align: center;
         font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -86,7 +86,7 @@ header {
     }
 
     & h3 {
-        color: $darkerLightText;
+        color: darken($textLight, 30%);
         font-family: 'Yanone Kaffeesatz', sans-serif;
         lost-row: 1/1;
         text-align: center;
@@ -102,13 +102,13 @@ header {
 
         a {
             text-decoration: none;
-            color: $lightLink;
+            color: $linkLight;
             &:hover {
-                color: $linkActive;
+                color: $linkLightActive;
             }
         }
         span {
-            color: $lightLink;
+            color: $linkLight;
             padding: 0 2rem 0 2rem; 
         }
     }
@@ -128,18 +128,22 @@ header {
 /* FOOTER */
 
 footer {
+    border-top:0.5rem solid $text;
     height: 100px;
     margin-top: -100px;
-    background-color: $altBgc;
+    background-color: $bgcAlt;
     lost-flex-container: column;
     & a {
-        color: $lightLink;
+        color: $linkLight;
         padding-top: 1rem;
         lost-center: auto;
         text-align: center;
+        &:hover {
+            color: $linkLightActive;
+        }
     }
     & p {
-        color: $lightLink;
+        color: $linkLight;
         lost-center: auto;
         text-align: center;
     }
@@ -163,60 +167,60 @@ Print styles
 
 @media print {
     *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+        *:before,
+        *:after {
+            background: transparent !important;
+            color: #000 !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
 
-    thead {
-        display: table-header-group;
-    }
+        thead {
+            display: table-header-group;
+        }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
 
-    img {
-        max-width: 100% !important;
-    }
+        img {
+            max-width: 100% !important;
+        }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
     }
-}
