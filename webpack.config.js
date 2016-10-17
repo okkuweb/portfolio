@@ -9,15 +9,12 @@ module.exports = {
     devtool: 'source-map',
     module: {
         loaders: [{
-            test: /\.tsx?$/,
+            test: /^(src\/js\/)(.+)(\.tsx?$)/,
             loader: "ts-loader"
         }]
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            },
             mangle: false
         })
     ]

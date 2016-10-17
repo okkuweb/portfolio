@@ -4,19 +4,19 @@
   "description": "Oskari's portfolio site",
   "repository": "https://github.com/okkuweb/portfolio.git",
   "scripts": {
-    "clean": "shx rm -rf public/css/* && shx rm -rf public/js/* && shx rm -rf public/*.php",
-    "php": "shx cp -f src/*.php public/",
+    "clean": "rm -rf public/css/* && rm -rf public/js/* && rm -rf public/*.php",
+    "php": "cp -f src/*.php public/",
     "php:watch": "nodemon --watch src --ext php --exec 'npm run php'",
     "css": "postcss --config postcss.json",
     "css:watch": "nodemon --watch src/css --ext css --exec 'npm run css'",
     "js": "webpack",
-    "js:watch": "npm run js -- --watch",
-    "server2": "php -S localhost:8000 -t public/ & browser-sync start --proxy 'localhost:8000' --files 'public/**/*'",
-    "server": "vagrant up && browser-sync start --proxy '192.168.33.10' --files 'public/**/*'",
-    "backup": "shx rm -rf stuff/backup/* && shx cp -r public stuff/backup/ && shx cp -r src stuff/backup/",
+    "js:watch": "nodemon --watch src/js --ext ts --exec 'npm run js'",
     "watch": "npm run php:watch & npm run css:watch & npm run js:watch",
+    "server": "vagrant up && browser-sync start --proxy '192.168.33.10' --files 'public/**/*'",
+    "server2": "php -S localhost:8000 -t public/ & browser-sync start --proxy 'localhost:8000' --files 'public/**/*'",
     "start": "npm run server & npm run watch",
     "start2": "npm run server2 & npm run watch",
+    "backup": "rm -rf stuff/backup/* && cp -r public stuff/backup/ && cp -r src stuff/backup/",
     "build": "npm run php && npm run css && npm run js"
   },
   "keywords": [
@@ -31,24 +31,18 @@
   "author": "Oskari Saari",
   "license": "ISC",
   "devDependencies": {
-    "@types/jquery": "^2.0.32",
     "autoprefixer": "^6.5.0",
     "browser-sync": "^2.17.0",
     "cssnano": "^3.7.5",
+    "glob": "^7.1.1",
     "lost": "^7.1.0",
     "nodemon": "^1.10.2",
-    "npm-watch": "^0.1.6",
     "postcss-cli": "^2.6.0",
     "postcss-import": "^8.1.2",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
-    "shx": "^0.1.4",
     "ts-loader": "^0.8.2",
     "typescript": "^2.0.3",
-    "webpack": "^1.13.2",
-    "yarn": "^0.15.1"
-  },
-  "dependencies": {
-    "jquery": "^3.1.1"
+    "webpack": "^1.13.2"
   }
 }
