@@ -1,16 +1,16 @@
 <?php include 'header.php' ?>
 <!-- index.php -->
-<section class="main">
+<div class="main">
     <div class="main--cover">
         <img src="" alt="">
-        <h1>Mun portfolio jee</h1>
+        <h2>Portfolio</h2>
     </div>
 
     <div class="main--introduction">
         <img src="" alt="">
         <h2>About ja sillee</h2>
         <p>Elit rerum adipisci ipsa quaerat facilis! Dolorum cum voluptatem consequatur nemo voluptatibus debitis eligendi. Maxime quibusdam maiores consectetur deserunt autem in? Ad doloremque dolorem ad perspiciatis unde animi. Nostrum dolorem.
-            Consectetur quae quod a tempore eius quas? Perferendis voluptatem commodi enim maiores aliquam esse, earum! Nobis pariatur qui nostrum laboriosam harum cumque culpa temporibus tempore cum tempore natus consequuntur. Excepturi.
+        Consectetur quae quod a tempore eius quas? Perferendis voluptatem commodi enim maiores aliquam esse, earum! Nobis pariatur qui nostrum laboriosam harum cumque culpa temporibus tempore cum tempore natus consequuntur. Excepturi.
         </p>
     </div>
 
@@ -29,6 +29,6 @@
             </div>
         </div>
     </div>
-</section>
-
+</div>
+</div>
 <?php include 'footer.php' ?>

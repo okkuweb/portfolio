@@ -11,13 +11,19 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="navigation">
-                <img src="" alt="logo">
-                <a href="#">About me</a>
-                <span>/</span>
-                <a href="github">Github</a>
-                <span>/</span>
-                <a href="contact">Codepen</a>
-            </nav>
-        </header>
+        <div class="wrapper">
+            <header>
+                <nav class="navigation">
+                    <h1>OSKARI SAARI</h1>
+                    <h3>
+                        WEB DEVELOPER
+                    </h3>
+                    <div class="navigation--links">
+                        <a href="#">About me</a>
+                        <span>/</span>
+                        <a href="#">Github</a>
+                        <span>/</span>
+                        <a href="#">Codepen</a>
+                    </div>
+                </nav>
+            </header>

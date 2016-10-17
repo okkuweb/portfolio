@@ -1,12 +1,9 @@
 <!-- footer.php -->
 <footer>
-    <div class="footer">
-        <address class="footer--contact">
-            <a href="mailto:mail@oskarisaari.com">
-                mail@oskarisaari.com
-            </a>
-        </address>
-    </div>
+        <a href="mailto:mail@oskarisaari.com">
+            mail@oskarisaari.com
+        </a>
+        <p>Copyright © 2016 Oskari Saari. All rights reserved.</p>
 </footer>
 <!-- JavaScript -->
 <script src="js/bundle.js"></script>

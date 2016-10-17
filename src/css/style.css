@@ -1,55 +1,147 @@
 /* ==========================================================================
-   Imported css libraries
-   ========================================================================== */
+Imported css libraries
+========================================================================== */
 
 @import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Heebo:400|Yanone+Kaffeesatz:200');
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
-$bgc: #FFFFFF;
+/* VARIABLES */
+
+/* @lost flexbox flex; */
+
+$bgc: #F2F1F0;
+$altBgc: #3C3C3C;
 $text: #4C4C4C;
-$link: #4C4C4C;
+$darkText: #3C3C3C;
+$lightText: #F2F1F0;
+$darkerLightText: #ACA69F;
+$link: #87A752;
+$lightLink: #F2F1F0;
 $linkActive: #87A752;
+
+/* ROOT STYLES */
 
 html {
     font-size: 10px;
     line-height: 1.4;
+    background-color: $bgc;
+    height: 100%;
+    margin: 0;
 }
 
 body {
-    background-color: $bgc;
     font-size: 1.6rem;
+    height: 100%;
+    margin: 0;
+}
+
+h2 {
+    color: $darkText;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2.8rem;
 }
 
 p {
     color: $text;
+    font-family: 'heebo', sans-serif;
 }
 
 a {
     color: $link;
-    text-decoration: none;
     font-style: italic;
+    font-family: 'heebo', sans-serif;
     &:hover {
         color: $linkActive;
     }
-    
 }
 
 span {
     color: $link;
 }
 
+.wrapper {
+    min-height: 100%;
+}
+
+/* HEADER */
+
+header {
+    background-color: $altBgc;
+    border-bottom:0.5rem solid $text;
+}
+
 .navigation {
-    a {
+    lost-center: 960px;
+
+    & h1 {
+        color: $lightText;
+        lost-row: 1/1;
+        text-align: center;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        margin: 0;
+    }
+
+    & h3 {
+        color: $darkerLightText;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        lost-row: 1/1;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    &--links {
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $lightLink;
+            &:hover {
+                color: $linkActive;
+            }
+        }
+        span {
+            color: $lightLink;
+            padding: 0 2rem 0 2rem; 
+        }
     }
 }
 
+/* CONTENT */
 
 .main {
-    p {
-        color: $text;
+    lost-utility: clearfix;
+    lost-center: 960px;
+    padding-bottom: 100px;
+    & > div {
+        lost-column: 1/1;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+    margin-top: -100px;
+    background-color: $altBgc;
+    lost-flex-container: column;
+    & a {
+        color: $lightLink;
+        padding-top: 1rem;
+        lost-center: auto;
+        text-align: center;
+    }
+    & p {
+        color: $lightLink;
+        lost-center: auto;
+        text-align: center;
     }
 }
 
@@ -66,56 +158,8 @@ span {
 
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+Print styles
+========================================================================== */
 
 @media print {
     *,
