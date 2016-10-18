@@ -8,6 +8,7 @@ Imported css libraries
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Heebo:400|Yanone+Kaffeesatz:200");
+@import url(../img/fontello.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -392,12 +393,17 @@ body {
 h2 {
   color: #3C3C3C;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 2.8rem; }
+  font-size: 3.4rem; }
 
 h3 {
   color: #3C3C3C;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 2.8rem; }
+
+h4 {
+  color: #3C3C3C;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2.2rem; }
 
 p {
   color: #4C4C4C;
@@ -410,6 +416,9 @@ a {
   a:hover {
     color: #344020; }
 
+li {
+  color: #4C4C4C; }
+
 span {
   color: #87A752; }
 
@@ -419,10 +428,10 @@ span {
 /* HEADER */
 header {
   background-color: #3C3C3C;
-  border-bottom: 0.5rem solid #4C4C4C; }
+  border-bottom: 0.5rem solid #b6cb94; }
 
 .navigation {
-  lost-center: 960px; }
+  lost-center: 96rem; }
   .navigation h1 {
     color: #F2F1F0;
     lost-row: 1/1;
@@ -451,26 +460,171 @@ header {
         color: #87A752; }
     .navigation--links span {
       color: #F2F1F0;
-      padding: 0 2rem 0 2rem; }
+      padding: 0 0.5rem; }
+      @media screen and (min-width: 461px) {
+        .navigation--links span {
+          padding: 0 2rem; } }
 
 /* CONTENT */
 .main {
-  lost-center: 960px;
-  padding-bottom: 100px; }
+  lost-center: 96rem;
+  padding: 1rem;
+  padding-bottom: 10rem; }
+  .main > div {
+    margin-bottom: 10rem; }
 
-.main--projects > div {
+.top-wrapper {
   display: flex;
+  flex-direction: column; }
+  .top-wrapper > div:last-child {
+    margin-top: 10rem; }
+  @media screen and (min-width: 961px) {
+    .top-wrapper {
+      flex-direction: row; }
+      .top-wrapper > div:last-child {
+        margin-top: 0; } }
+
+.about--title {
+  text-align: center; }
+  @media screen and (min-width: 761px) {
+    .about--title {
+      text-align: left; } }
+
+.about--image {
+  display: flex;
+  flex-direction: column;
   align-items: center; }
-  .main--projects > div > img {
-    lost-column: 1/4; }
-  .main--projects > div > div {
-    lost-column: 3/4; }
+  .about--image img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin: 0 auto; }
+  @media screen and (min-width: 761px) {
+    .about--image {
+      align-items: flex-start; }
+      .about--image img {
+        margin: 0; } }
+
+.about--info h4, .about--info p {
+  text-align: center;
+  margin: 0; }
+  @media screen and (min-width: 761px) {
+    .about--info h4, .about--info p {
+      text-align: left; } }
+
+@media screen and (min-width: 761px) {
+  .about--info {
+    width: 40rem; } }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .skills div {
+    margin-right: 0;
+    width: 18rem; }
+    @media screen and (min-width: 461px) {
+      .skills div {
+        margin-right: 3rem; } }
+  @media screen and (min-width: 461px) {
+    .skills {
+      flex-direction: row;
+      align-items: flex-start; } }
+  .skills--title {
+    display: flex;
+    justify-content: center; }
+    @media screen and (min-width: 761px) {
+      .skills--title {
+        justify-content: flex-start; } }
+    @media screen and (min-width: 961px) {
+      .skills--title {
+        justify-content: center; } }
+  .skills h3 {
+    display: flex;
+    justify-content: center; }
+
+.projects {
+  margin-bottom: 1rem; }
+  .projects > div {
+    margin-bottom: 8rem; }
+  .projects div:last-child {
+    margin-bottom: 0rem; }
+  .projects--title {
+    text-align: center; }
+    @media screen and (min-width: 761px) {
+      .projects--title {
+        text-align: left; } }
+  .projects--normal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 561px) {
+      .projects--normal {
+        flex-direction: row; } }
+    .projects--normal img {
+      max-width: 200px;
+      max-height: 141.45px; }
+    @media screen and (min-width: 561px) {
+      .projects--normal div {
+        margin-left: 2rem; } }
+    .projects--normal div h3 {
+      margin: 0;
+      font-style: normal; }
+      .projects--normal div h3:hover {
+        color: #344020; }
+    .projects--normal div a {
+      text-decoration: none; }
+      .projects--normal div a:hover {
+        color: #344020; }
+  .projects--reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 561px) {
+      .projects--reverse {
+        flex-direction: row-reverse; } }
+    .projects--reverse img {
+      margin-top: 2rem;
+      max-width: 200px;
+      max-height: 141.45px; }
+    @media screen and (min-width: 561px) {
+      .projects--reverse div {
+        margin-right: 2rem; } }
+    .projects--reverse div h3 {
+      margin: 0;
+      font-style: normal; }
+      .projects--reverse div h3:hover {
+        color: #344020; }
+    .projects--reverse div a {
+      text-decoration: none; }
+      .projects--reverse div a:hover {
+        color: #344020; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contact i {
+    font-size: 3rem;
+    color: #3C3C3C; }
+  .contact > div {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .contact > div > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 2rem; }
 
 /* FOOTER */
 footer {
-  border-top: 0.5rem solid #4C4C4C;
-  height: 100px;
-  margin-top: -100px;
+  border-top: 0.5rem solid #b6cb94;
+  height: 11rem;
+  margin-top: -11rem;
   background-color: #3C3C3C; }
   footer > div {
     width: 100%;

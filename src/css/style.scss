@@ -4,6 +4,7 @@ Imported css libraries
 
 @import "normalize";
 @import url('https://fonts.googleapis.com/css?family=Heebo:400|Yanone+Kaffeesatz:200');
+@import "../img/fontello.css";
 
 /* ==========================================================================
 Author's custom styles
@@ -41,13 +42,19 @@ body {
 h2 {
     color: $textDark;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3.4rem;
 }
 
 h3 {
     color: $textDark;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 2.8rem;
+}
+
+h4 {
+    color: $textDark;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2.2rem;
 }
 
 p {
@@ -64,6 +71,10 @@ a {
     }
 }
 
+li {
+    color: $text;
+}
+
 span {
     color: $link;
 }
@@ -76,13 +87,13 @@ span {
 
 header {
     background-color: $bgcAlt;
-    border-bottom:0.5rem solid $text;
+    border-bottom:0.5rem solid lighten($link, 20%);
 }
 
 .navigation {
-    lost-center: 960px;
+    lost-center: 96rem;
 
-    & h1 {
+    h1 {
         color: $textLight;
         lost-row: 1/1;
         text-align: center;
@@ -90,13 +101,12 @@ header {
         margin: 0;
     }
 
-    & h3 {
+    h3 {
         color: darken($textLight, 30%);
         font-family: 'Yanone Kaffeesatz', sans-serif;
         lost-row: 1/1;
         text-align: center;
         margin: 0;
-
     }
 
     &--links {
@@ -118,7 +128,10 @@ header {
         }
         & span {
             color: $linkLight;
-            padding: 0 2rem 0 2rem; 
+            padding: 0 0.5rem; 
+            @media screen and (min-width: 461px) {
+                padding: 0 2rem;
+            }
         }
     }
 }
@@ -126,29 +139,207 @@ header {
 /* CONTENT */
 
 .main {
-    lost-center: 960px;
-    padding-bottom: 100px;
+    lost-center: 96rem;
+    padding: 1rem;
+    padding-bottom: 10rem;
+    >div {
+        margin-bottom: 10rem;
+    }
 }
 
-.main--projects {
-    &>div {
+.top-wrapper {
     display: flex;
-    align-items: center;
-        &>img {
-            lost-column: 1/4;
+    flex-direction: column;
+    &>div:last-child {
+        margin-top: 10rem;
+    }
+    @media screen and (min-width: 961px) {
+        flex-direction: row;
+    &>div:last-child {
+        margin-top: 0;
+    }
+    }
+}
+
+.about {
+    &--title {
+        text-align: center;
+        @media screen and (min-width: 761px) {
+            text-align: left;
         }
-        &>div {
-            lost-column: 3/4;
+    }
+    &--image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 761px) {
+            align-items: flex-start;
+            img {
+                margin: 0;
+            }
+        }
+    }
+    &--info {
+        h4, p {
+            text-align: center;
+            margin: 0;
+            @media screen and (min-width: 761px) {
+                text-align: left;
+            }
+        }
+        @media screen and (min-width: 761px) {
+            width: 40rem;
         }
     }
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        margin-right: 0;
+        width: 18rem;
+        @media screen and (min-width: 461px) {
+            margin-right: 3rem;
+        }
+    }
+    @media screen and (min-width: 461px) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    &--title {
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: 761px) {
+            justify-content: flex-start;
+        }
+        @media screen and (min-width: 961px) {
+            justify-content: center;
+        }
+    }
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.projects {
+    margin-bottom: 1rem;
+    >div {
+        margin-bottom: 8rem;
+    }
+    div:last-child {
+        margin-bottom: 0rem;
+    }
+    &--title {
+        text-align: center;
+        @media screen and (min-width: 761px) {
+            text-align: left;
+        }
+    }
+    &--normal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 561px) {
+            flex-direction: row;
+        }
+        img {
+            max-width: 200px;
+            max-height: 141.45px;
+        }
+        div {
+            @media screen and (min-width: 561px) {
+                margin-left: 2rem;
+            }
+            h3 {
+                margin: 0;
+                font-style: normal;
+                &:hover {
+                    color: $linkActive;
+                }
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                    color: $linkActive;
+                }
+            }
+        }
+    }
+    &--reverse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 561px) {
+            flex-direction: row-reverse;
+        }
+        img {
+            margin-top: 2rem;
+            max-width: 200px;
+            max-height: 141.45px;
+        }
+        div {
+            @media screen and (min-width: 561px) {
+                margin-right: 2rem;
+            }
+            h3 {
+                margin: 0;
+                font-style: normal;
+                &:hover {
+                    color: $linkActive;
+                }
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                    color: $linkActive;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 3rem;
+        color: $textDark;
+    }
+    >div {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                margin-left: 2rem;
+            &:nth-child(2) {
+            }
+        }
+    }
+}
+
+
 /* FOOTER */
 
 footer {
-    border-top:0.5rem solid $text;
-    height: 100px;
-    margin-top: -100px;
+    border-top:0.5rem solid lighten($link, 20%);
+    height: 11rem;
+    margin-top: -11rem;
     background-color: $bgcAlt;
     &>div {
         width: 100%;
