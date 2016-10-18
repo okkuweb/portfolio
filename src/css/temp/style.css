@@ -376,7 +376,6 @@ textarea {
 Author's custom styles
 ========================================================================== */
 /* VARIABLES */
-/* @lost flexbox flex; */
 /* ROOT STYLES */
 html {
   font-size: 10px;
@@ -391,6 +390,11 @@ body {
   margin: 0; }
 
 h2 {
+  color: #3C3C3C;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2.8rem; }
+
+h3 {
   color: #3C3C3C;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 2.8rem; }
@@ -432,14 +436,18 @@ header {
     text-align: center;
     margin: 0; }
   .navigation--links {
+    lost-row: 1/1;
     display: flex;
     height: 60px;
     justify-content: center;
     align-items: center; }
-    .navigation--links a {
+    .navigation--links > a {
+      display: flex;
+      align-items: center;
+      height: 100%;
       text-decoration: none;
       color: #F2F1F0; }
-      .navigation--links a:hover {
+      .navigation--links > a:hover {
         color: #87A752; }
     .navigation--links span {
       color: #F2F1F0;
@@ -447,30 +455,43 @@ header {
 
 /* CONTENT */
 .main {
-  lost-utility: clearfix;
   lost-center: 960px;
   padding-bottom: 100px; }
-  .main > div {
-    lost-column: 1/1; }
+
+.main--projects > div {
+  display: flex;
+  align-items: center; }
+  .main--projects > div > img {
+    lost-column: 1/4; }
+  .main--projects > div > div {
+    lost-column: 3/4; }
 
 /* FOOTER */
 footer {
   border-top: 0.5rem solid #4C4C4C;
   height: 100px;
   margin-top: -100px;
-  background-color: #3C3C3C;
-  lost-flex-container: column; }
-  footer a {
-    color: #F2F1F0;
-    padding-top: 1rem;
-    lost-center: auto;
-    text-align: center; }
-    footer a:hover {
-      color: #87A752; }
+  background-color: #3C3C3C; }
+  footer > div {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer > div a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: #F2F1F0; }
+      footer > div a:hover {
+        color: #87A752; }
   footer p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
     color: #F2F1F0;
-    lost-center: auto;
-    text-align: center; }
+    margin: 0; }
 
 /* ==========================================================================
 Print styles

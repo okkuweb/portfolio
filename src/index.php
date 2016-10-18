@@ -1,17 +1,18 @@
 <?php include 'header.php' ?>
 <!-- index.php -->
 <div class="main">
-    <div class="main--cover">
-        <img src="" alt="">
-        <h2>Portfolio</h2>
-    </div>
 
-    <div class="main--introduction">
-        <img src="" alt="">
-        <h2>About ja sillee</h2>
-        <p>Elit rerum adipisci ipsa quaerat facilis! Dolorum cum voluptatem consequatur nemo voluptatibus debitis eligendi. Maxime quibusdam maiores consectetur deserunt autem in? Ad doloremque dolorem ad perspiciatis unde animi. Nostrum dolorem.
-        Consectetur quae quod a tempore eius quas? Perferendis voluptatem commodi enim maiores aliquam esse, earum! Nobis pariatur qui nostrum laboriosam harum cumque culpa temporibus tempore cum tempore natus consequuntur. Excepturi.
-        </p>
+    <div class="main--projects">
+        <h2>PROJECTS</h2>
+        <div>
+            <img src="img/Selection_007.png" alt="">
+            <div>
+            <h3>kaarinaniemi.fi</h3>
+            <p>Adipisicing officiis eius dolorem nihil nemo. Et ullam harum ut laborum corporis, repudiandae reiciendis! Adipisci officiis sit nisi blanditiis minima nihil error, voluptatibus. Accusamus at nam culpa impedit quasi inventore.
+Adipisicing quas vel totam dolorem dicta, reprehenderit. Recusandae natus obcaecati ratione velit magnam? Facere placeat minus dolorum consequuntur incidunt, quo. Ea ratione expedita fuga nobis laudantium modi est. Fugit in.
+</p>
+            </div>
+        </div>
     </div>
 
     <div class="main--skills">

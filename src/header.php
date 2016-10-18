@@ -15,13 +15,11 @@
             <header>
                 <nav class="navigation">
                     <h1>OSKARI SAARI</h1>
-                    <h3>
-                        WEB DEVELOPER
-                    </h3>
+                    <h3>WEB DEVELOPER</h3>
                     <div class="navigation--links">
                         <a href="#">About me</a>
                         <span>/</span>
-                        <a href="#">Github</a>
+                        <a href="https://github.com/okkuweb">Github</a>
                         <span>/</span>
                         <a href="#">Codepen</a>
                     </div>
