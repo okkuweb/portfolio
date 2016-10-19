@@ -11,7 +11,9 @@
                 </div>
                 <div class="about--info">
                     <h4>Web developer, dabbling graphic designer</h4><br><br>
-                    <p>Currently studying digital media in Kymenlaakso University of Applied Sciences.<br><br>Excited to learn more about web development.<br><br>Available for hire.</p>
+                    <p>Currently studying digital media in Kymenlaakso University of Applied Sciences.</p><br>
+                    <p>Excited to learn more about web development.</p><br>
+                    <p>Available for hire.</p><br>
                 </div>
             </div>
         </div>
@@ -28,7 +30,7 @@
                     </ul>
                 </div>
                 <div class="skills--tools">
-                    <h3>Programming tools</h3>
+                    <h3>Development tools</h3>
                     <ul>
                         <li>Node.js</li>
                         <li>npm</li>
@@ -61,7 +63,7 @@
                 <img src="img/kaarinaniemi.png" alt="">
             </a>
             <div>
-                <a href="http://www.kaarinaniemi.fi"><h3>kaarinaniemi.fi</h3></a>
+                <a href="http://www.kaarinaniemi.fi"><h3>Hiusateljee Kaarina Niemi</h3></a>
                 <p>Adipisicing officiis eius dolorem nihil nemo. Et ullam harum ut laborum corporis, repudiandae reiciendis! Adipisci officiis sit nisi blanditiis minima nihil error, voluptatibus. Accusamus at nam culpa impedit quasi inventore.
                 Adipisicing quas vel totam dolorem dicta, reprehenderit. Recusandae natus obcaecati ratione velit magnam? Facere placeat minus dolorum consequuntur incidunt, quo. Ea ratione expedita fuga nobis laudantium modi est. Fugit in.
                 </p>
@@ -83,7 +85,7 @@
                 <img src="img/kyamk.png" alt="">
             </a>
             <div>
-                <a href="http://www.kyamk.fi/Ty%C3%B6el%C3%A4m%C3%A4lle/Projektit/KymiDesign%26Business/"><h3>Kymi Design</h3></a>
+                <a href="http://www.kyamk.fi/Ty%C3%B6el%C3%A4m%C3%A4lle/Projektit/KymiDesign%26Business/"><h3>Kymi Design & Business</h3></a>
                 <p>Adipisicing officiis eius dolorem nihil nemo. Et ullam harum ut laborum corporis, repudiandae reiciendis! Adipisci officiis sit nisi blanditiis minima nihil error, voluptatibus. Accusamus at nam culpa impedit quasi inventore.
                 Adipisicing quas vel totam dolorem dicta, reprehenderit. Recusandae natus obcaecati ratione velit magnam? Facere placeat minus dolorum consequuntur incidunt, quo. Ea ratione expedita fuga nobis laudantium modi est. Fugit in.
                 </p>

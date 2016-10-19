@@ -8,6 +8,6 @@
     ],
     "local-plugins": true,
     "autoprefixer": {
-        "browsers": "> 5%"
+        "browsers": ["> 5%", "IE 10", "IE 11"]
     }
 }
