@@ -98,7 +98,7 @@
         <h2 class="contact--title" id="contact">CONTACT ME</h2>
         <div>
             <div>
-                <i class="icon-phone"></i><a href="#contact">+358 40 172 4140</a>
+                <i class="icon-phone"></i><a href="tel:+358401724140">+358 40 172 4140</a>
             </div>
             <div>
                 <i class="icon-mail-alt"></i><a href="mailto:mail@oskarisaari.com">mail@oskarisaari.com</a>

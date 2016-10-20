@@ -538,9 +538,6 @@ header {
     @media screen and (min-width: 760px) {
       .skills--title {
         justify-content: center; } }
-    @media screen and (min-width: 960px) {
-      .skills--title {
-        margin-left: 3.8rem; } }
   .skills h3 {
     display: flex;
     justify-content: center;
