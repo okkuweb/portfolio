@@ -428,24 +428,36 @@ span {
 /* HEADER */
 header {
   background-color: #3C3C3C;
-  border-bottom: 0.5rem solid #b6cb94; }
+  border-bottom: 0.5rem solid #b6cb94;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  transition: top 1s ease; }
+
+#header__large {
+  top: 0; }
+
+#header__small {
+  top: -8.2rem; }
 
 .navigation {
-  lost-center: 96rem; }
+  lost-center: 96rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .navigation h1 {
     color: #F2F1F0;
     lost-row: 1/1;
-    text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     margin: 0; }
+  .navigation > a {
+    text-decoration: none;
+    font-style: normal; }
   .navigation h3 {
     color: #aba59e;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    lost-row: 1/1;
-    text-align: center;
     margin: 0; }
   .navigation--links {
-    lost-row: 1/1;
     display: flex;
     height: 60px;
     justify-content: center;
@@ -469,6 +481,7 @@ header {
 .main {
   lost-center: 96rem;
   padding: 1rem;
+  padding-top: 15rem;
   padding-bottom: 10rem; }
   .main > div {
     margin-bottom: 10rem; }

@@ -11,19 +11,18 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <nav class="navigation">
-                    <h1>OSKARI SAARI</h1>
-                    <h3>WEB DEVELOPER</h3>
-                    <div class="navigation--links">
-                        <a href="#about">About</a>
-                        <span>/</span>
-                        <a href="#projects">Projects</a>
-                        <span>/</span>
-                        <a href="#contact">Contact</a>
-                        <span>/</span>
-                        <a href="https://github.com/okkuweb">Github</a>
-                    </div>
-                </nav>
-            </header>
+        <header id="header__large">
+            <nav class="navigation">
+                <a href="http://oskarisaari.com"><h1>OSKARI SAARI</h1></a>
+                <h3>WEB DEVELOPER</h3>
+                <div class="navigation--links">
+                    <a href="#about">About</a>
+                    <span>/</span>
+                    <a href="#projects">Projects</a>
+                    <span>/</span>
+                    <a href="#contact">Contact</a>
+                    <span>/</span>
+                    <a href="https://github.com/okkuweb">Github</a>
+                </div>
+            </nav>
+        </header>
