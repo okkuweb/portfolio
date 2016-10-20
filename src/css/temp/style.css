@@ -427,18 +427,20 @@ span {
 
 /* HEADER */
 header {
+  z-index: 150;
   background-color: #3C3C3C;
   border-bottom: 0.5rem solid #b6cb94;
   width: 100%;
   position: fixed;
   left: 0;
-  transition: top 1s ease; }
+  top: 0;
+  transition: transform 1000ms ease; }
 
 #header__large {
-  top: 0; }
+  transform: translateY(0%); }
 
 #header__small {
-  top: -8.2rem; }
+  transform: translateY(-57%); }
 
 .navigation {
   lost-center: 96rem;

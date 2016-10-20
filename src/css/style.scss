@@ -86,19 +86,21 @@ span {
 /* HEADER */
 
 header {
+    z-index: 150;
     background-color: $bgcAlt;
     border-bottom:0.5rem solid lighten($link, 20%);
     width: 100%;
     position: fixed;
     left: 0;
-    transition: top 1s ease;
+    top: 0;
+    transition: transform 1000ms ease;
 }
 
 #header__large {
-    top: 0;
+    transform: translateY(0%);
 }
 #header__small {
-    top: -8.2rem;
+    transform: translateY(-57%);
 }
 
 
