@@ -526,7 +526,7 @@ header {
     max-width: 40rem; }
     .about--info h4, .about--info p {
       text-align: left; }
-      @media screen and (min-width: 400px) {
+      @media screen and (min-width: 460px) {
         .about--info h4, .about--info p {
           padding-left: 40px; } }
       @media screen and (min-width: 960px) {
