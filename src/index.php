@@ -1,19 +1,21 @@
 <?php include 'header.php' ?>
 <!-- index.php -->
-<div class="main">
+<div id="about" class="main">
     <div class="top-wrapper">
         <div>
-            <h2 class="about--title" id="about">ABOUT ME</h2>
             <div class="about">
                 <div class="about--image">
+                    <h2>ABOUT ME</h2>
                     <img src="img/me.jpg" alt="">
                     <h3>Oskari Saari</h3>
                 </div>
                 <div class="about--info">
-                    <h4>Web developer, dabbling graphic designer</h4><br><br>
-                    <p>Currently studying digital media in Kymenlaakso University of Applied Sciences.</p><br>
-                    <p>Excited to learn more about web development.</p><br>
-                    <p>Available for hire.</p><br>
+                    <h4>Web developer, dabbling graphic designer</h4>
+                    <p>I'm currently studying digital media in Kymenlaakso University of Applied Sciences.</p>
+                    <p>I love working on anything computer related.
+                    My experience in web development ranges from the frontend to some backend development.
+                    <p>Excited to learn more.</p>
+                    <p>Available for hire.</p>
                 </div>
             </div>
         </div>
@@ -26,7 +28,7 @@
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
-                        <li>PHP(basics)</li>
+                        <li>PHP (basics)</li>
                     </ul>
                 </div>
                 <div class="skills--tools">
@@ -64,9 +66,14 @@
             </a>
             <div>
                 <a href="http://www.kaarinaniemi.fi"><h3>Hiusateljee Kaarina Niemi</h3></a>
-                <p>Adipisicing officiis eius dolorem nihil nemo. Et ullam harum ut laborum corporis, repudiandae reiciendis! Adipisci officiis sit nisi blanditiis minima nihil error, voluptatibus. Accusamus at nam culpa impedit quasi inventore.
-                Adipisicing quas vel totam dolorem dicta, reprehenderit. Recusandae natus obcaecati ratione velit magnam? Facere placeat minus dolorum consequuntur incidunt, quo. Ea ratione expedita fuga nobis laudantium modi est. Fugit in.
-                </p>
+                <p>In this project I made a simple website for a small hair salon business in Helsinki.</p>
+                
+                <p>The base of the website is a Bootstrap theme due to the urgent deadline in the project.
+                The website has met some success and publicity after publishing.
+                We might be adding some product cataloging and other improvements on the site in the near future.</p>
+
+                <p>Languages used: HTML, CSS, JavaScript, PHP</p>
+                <p>Technologies used: jQuery, Bootstrap, npm scripts, PostCSS, Git</p>
             </div>
         </div>
         <div class="projects--reverse">
@@ -75,9 +82,12 @@
             </a>
             <div>
                 <a href="http://www.oljemark.com"><h3>Mainostoimisto Oljemark</h3></a>
-                <p>Adipisicing officiis eius dolorem nihil nemo. Et ullam harum ut laborum corporis, repudiandae reiciendis! Adipisci officiis sit nisi blanditiis minima nihil error, voluptatibus. Accusamus at nam culpa impedit quasi inventore.
-                Adipisicing quas vel totam dolorem dicta, reprehenderit. Recusandae natus obcaecati ratione velit magnam? Facere placeat minus dolorum consequuntur incidunt, quo. Ea ratione expedita fuga nobis laudantium modi est. Fugit in.
-                </p>
+                <p>This was an internship position at an advertising agency in Espoo.</p>
+                <p>I mostly worked here on varying kinds of WordPress websites, from simple blog websites to big E-commerce sites.
+                Occasionally I did some graphic design work on advertisements.
+                I got to also work on website cache and SEO optimization and user analytics.</p>
+                <p>Languages used: HTML, CSS, JavaScript, PHP</p>
+                <p>Technologies used: WordPress, jQuery, Git, Photoshop, inDesign, Illustrator</p>
             </div>
         </div>
         <div class="projects--normal">
@@ -86,9 +96,14 @@
             </a>
             <div>
                 <a href="http://www.kyamk.fi/Ty%C3%B6el%C3%A4m%C3%A4lle/Projektit/KymiDesign%26Business/"><h3>Kymi Design & Business</h3></a>
-                <p>Adipisicing officiis eius dolorem nihil nemo. Et ullam harum ut laborum corporis, repudiandae reiciendis! Adipisci officiis sit nisi blanditiis minima nihil error, voluptatibus. Accusamus at nam culpa impedit quasi inventore.
-                Adipisicing quas vel totam dolorem dicta, reprehenderit. Recusandae natus obcaecati ratione velit magnam? Facere placeat minus dolorum consequuntur incidunt, quo. Ea ratione expedita fuga nobis laudantium modi est. Fugit in.
-                </p>
+                <p>This was my first intern position in web development.</p>
+                <p>A part of our class in KyAMK attended this internship.
+                Most of what we did here was done from the ground up, so we could learn the ropes of web development properly.</p>
+                <p>Some of the projects were static websites done with simple HTML and CSS.
+                Others were made with WordPress by making a custom theme from start to finish.
+                The internship was also an invaluable learning experience in customer interaction and teamwork.
+                <p>Languages used: HTML, CSS, PHP</p>
+                <p>Technologies used: WordPress, jQuery</p>
             </div>
         </div>
     </div>

@@ -8,7 +8,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" onload="if(media!='all')media='all'">
+        <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     </head>
     <body>
         <header id="header__large">
@@ -16,11 +17,11 @@
                 <a href="http://oskarisaari.com"><h1>OSKARI SAARI</h1></a>
                 <h3>WEB DEVELOPER</h3>
                 <div class="navigation--links">
-                    <a href="#about">About</a>
+                    <a data-scroll href="#about">About</a>
                     <span>/</span>
-                    <a href="#projects">Projects</a>
+                    <a data-scroll href="#projects">Projects</a>
                     <span>/</span>
-                    <a href="#contact">Contact</a>
+                    <a data-scroll href="#contact">Contact</a>
                     <span>/</span>
                     <a href="https://github.com/okkuweb">Github</a>
                 </div>

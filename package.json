@@ -39,8 +39,13 @@
     "node-sass": "^3.10.1",
     "nodemon": "^1.10.2",
     "postcss-cli": "^2.6.0",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll",
     "ts-loader": "^0.8.2",
     "typescript": "^2.0.3",
     "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll"
   }
 }

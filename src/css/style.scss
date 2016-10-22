@@ -183,13 +183,16 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &--title {
-        text-align: center;
+    @media screen and (min-width: 960px) {
+        align-items: flex-start;
     }
     &--image {
         display: flex;
         flex-direction: column;
         align-items: center;
+        h3 {
+            margin-bottom: 0;
+        }
         img {
             width: 20rem;
             height: 20rem;
@@ -205,12 +208,15 @@ header {
     }
     &--info {
         h4, p {
-            text-align: center;
-            margin: 0;
+            text-align: left;
+            @media screen and (min-width: 400px) {
+                padding-left: 40px;
+            }
+            @media screen and (min-width: 960px) {
+                padding-left: 0;
+            }
         }
-        @media screen and (min-width: 760px) {
-            width: 40rem;
-        }
+            max-width: 40rem;
     }
 }
 
@@ -253,6 +259,9 @@ header {
 
 .projects {
     margin-bottom: 1rem;
+    p {
+        margin-bottom: 0;
+    }                
     >div {
         margin-bottom: 8rem;
     }
@@ -276,10 +285,9 @@ header {
         div {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             @media screen and (min-width: 560px) {
                 margin-left: 2rem;
-                align-items: flex-start;
             }
             h3 {
                 margin: 0;
@@ -287,10 +295,14 @@ header {
             }
             a {
                 text-decoration: none;
+                margin: 0 auto;
                 &:hover {
                     h3 {
                         color: $link;
                     }
+                }
+                @media screen and (min-width: 560px) {
+                    margin: 0 0;
                 }
             }
         }

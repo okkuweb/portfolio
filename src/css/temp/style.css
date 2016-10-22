@@ -503,12 +503,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .about--title {
-    text-align: center; }
+  @media screen and (min-width: 960px) {
+    .about {
+      align-items: flex-start; } }
   .about--image {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .about--image h3 {
+      margin-bottom: 0; }
     .about--image img {
       width: 20rem;
       height: 20rem;
@@ -519,12 +522,16 @@ header {
         align-items: center; }
         .about--image img {
           margin: 0; } }
-  .about--info h4, .about--info p {
-    text-align: center;
-    margin: 0; }
-  @media screen and (min-width: 760px) {
-    .about--info {
-      width: 40rem; } }
+  .about--info {
+    max-width: 40rem; }
+    .about--info h4, .about--info p {
+      text-align: left; }
+      @media screen and (min-width: 400px) {
+        .about--info h4, .about--info p {
+          padding-left: 40px; } }
+      @media screen and (min-width: 960px) {
+        .about--info h4, .about--info p {
+          padding-left: 0; } }
 
 .skills {
   display: flex;
@@ -560,6 +567,8 @@ header {
 
 .projects {
   margin-bottom: 1rem; }
+  .projects p {
+    margin-bottom: 0; }
   .projects > div {
     margin-bottom: 8rem; }
   .projects div:last-child {
@@ -579,18 +588,21 @@ header {
     .projects--normal div {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: flex-start; }
       @media screen and (min-width: 560px) {
         .projects--normal div {
-          margin-left: 2rem;
-          align-items: flex-start; } }
+          margin-left: 2rem; } }
       .projects--normal div h3 {
         margin: 0;
         font-style: normal; }
       .projects--normal div a {
-        text-decoration: none; }
+        text-decoration: none;
+        margin: 0 auto; }
         .projects--normal div a:hover h3 {
           color: #87A752; }
+        @media screen and (min-width: 560px) {
+          .projects--normal div a {
+            margin: 0 0; } }
   .projects--reverse {
     display: flex;
     flex-direction: column;
