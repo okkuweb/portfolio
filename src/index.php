@@ -30,15 +30,6 @@
                         <li>PHP (basics)</li>
                     </ul>
                 </div>
-                <div class="skills--graphic">
-                    <h3>Design tools</h3>
-                    <ul>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>InDesign</li>
-                        <li>Pen & paper</li>
-                    </ul>
-                </div>
                 <div class="skills--tools">
                     <h3>Development tools</h3>
                     <ul>
@@ -53,6 +44,15 @@
                         <li>WordPress</li>
                         <li>TypeScript</li>
                         <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skills--graphic">
+                    <h3>Design tools</h3>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>InDesign</li>
+                        <li>Pen & paper</li>
                     </ul>
                 </div>
             </div>

@@ -540,13 +540,18 @@ header {
   .skills div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-right: 0;
-    width: 17.3rem; }
+    width: 19rem; }
     @media screen and (min-width: 460px) {
       .skills div {
         margin-right: 3rem; }
         .skills div:last-child {
           margin-right: 0; } }
+  .skills--languages ul {
+    margin-left: 1.3rem; }
+  .skills--graphic ul {
+    margin-right: 0.5rem; }
   @media screen and (min-width: 460px) {
     .skills {
       flex-direction: row;

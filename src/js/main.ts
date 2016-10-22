@@ -10,9 +10,13 @@ const header = document.getElementById("header__large")
 // and make it smaller when scrolling down the page
 setInterval(function() {
     if(window.scrollY <= 5){
-        header.id = "header__large";
+        if(header.id !== "header__large") {
+            header.id = "header__large";
+        }
     } else if(window.scrollY > 5) {
-        header.id = "header__small";
+        if(header.id !== "header__small") {
+            header.id = "header__small";
+        }
     }
 }, 200);
 
