@@ -23,7 +23,7 @@
                     <span>/</span>
                     <a data-scroll href="#contact">Contact</a>
                     <span>/</span>
-                    <a href="https://github.com/okkuweb">Github</a>
+                    <a href="https://github.com/okkuweb">GitHub</a>
                 </div>
             </nav>
         </header>

@@ -1,11 +1,11 @@
 <?php include 'header.php' ?>
 <!-- index.php -->
-<div id="about" class="main">
+<div class="main">
     <div class="top-wrapper">
         <div>
             <div class="about">
                 <div class="about--image">
-                    <h2>ABOUT ME</h2>
+                    <h2 id="about">ABOUT ME</h2>
                     <img src="img/me.jpg" alt="">
                     <h3>Oskari Saari</h3>
                 </div>
@@ -13,8 +13,7 @@
                     <h4>Web developer, dabbling graphic designer</h4>
                     <p>I'm currently studying digital media in Kymenlaakso University of Applied Sciences.</p>
                     <p>I love working on anything computer related.
-                    My experience in web development ranges from the frontend to some backend development.
-                    <p>Excited to learn more.</p>
+                    My experience in web development ranges from the frontend to some backend development and I'm excited to learn more.</p>
                     <p>Available for hire.</p>
                 </div>
             </div>
@@ -31,27 +30,29 @@
                         <li>PHP (basics)</li>
                     </ul>
                 </div>
-                <div class="skills--tools">
-                    <h3>Development tools</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>npm</li>
-                        <li>Sass</li>
-                        <li>PostCSS</li>
-                        <li>jQuery</li>
-                        <li>Bootstrap</li>
-                        <li>Gulp.js</li>
-                        <li>Webpack</li>
-                        <li>WordPress</li>
-                    </ul>
-                </div>
                 <div class="skills--graphic">
                     <h3>Design tools</h3>
                     <ul>
                         <li>Photoshop</li>
                         <li>Illustrator</li>
-                        <li>inDesign</li>
+                        <li>InDesign</li>
                         <li>Pen & paper</li>
+                    </ul>
+                </div>
+                <div class="skills--tools">
+                    <h3>Development tools</h3>
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>Node.js</li>
+                        <li>npm</li>
+                        <li>Webpack</li>
+                        <li>Gulp.js</li>
+                        <li>Sass</li>
+                        <li>PostCSS</li>
+                        <li>WordPress</li>
+                        <li>TypeScript</li>
+                        <li>Git</li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +71,7 @@
                 
                 <p>The base of the website is a Bootstrap theme due to the urgent deadline in the project.
                 The website has met some success and publicity after publishing.
-                We might be adding some product cataloging and other improvements on the site in the near future.</p>
+                We might add product cataloging and other improvements on the site in the near future.</p>
 
                 <p>Languages used: HTML, CSS, JavaScript, PHP</p>
                 <p>Technologies used: jQuery, Bootstrap, npm scripts, PostCSS, Git</p>
@@ -83,7 +84,7 @@
             <div>
                 <a href="http://www.oljemark.com"><h3>Mainostoimisto Oljemark</h3></a>
                 <p>This was an internship position at an advertising agency in Espoo.</p>
-                <p>I mostly worked here on varying kinds of WordPress websites, from simple blog websites to big E-commerce sites.
+                <p>I mostly worked there on varying kinds of WordPress websites, from simple blog websites to big E-commerce sites.
                 Occasionally I did some graphic design work on advertisements.
                 I got to also work on website cache and SEO optimization and user analytics.</p>
                 <p>Languages used: HTML, CSS, JavaScript, PHP</p>
@@ -96,10 +97,10 @@
             </a>
             <div>
                 <a href="http://www.kyamk.fi/Ty%C3%B6el%C3%A4m%C3%A4lle/Projektit/KymiDesign%26Business/"><h3>Kymi Design & Business</h3></a>
-                <p>This was my first intern position in web development.</p>
+                <p>This was my first internship position in web development.</p>
                 <p>A part of our class in KyAMK attended this internship.
-                Most of what we did here was done from the ground up, so we could learn the ropes of web development properly.</p>
-                <p>Some of the projects were static websites done with simple HTML and CSS.
+                Most of our work was created from the ground up, so we could learn the ropes of web development properly.</p>
+                <p>Some of the projects were simple static websites done with HTML and CSS.
                 Others were made with WordPress by making a custom theme from start to finish.
                 The internship was also an invaluable learning experience in customer interaction and teamwork.
                 <p>Languages used: HTML, CSS, PHP</p>
