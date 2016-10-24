@@ -1,12 +1,11 @@
 <?php include 'header.php' ?>
-<!-- index.php -->
 <div class="main">
     <div class="top-wrapper">
         <div>
             <div class="about">
                 <div class="about--image">
                     <h2 id="about">ABOUT ME</h2>
-                    <img src="img/me.jpg" alt="">
+                    <img src="img/me.jpg" alt="Picture of Oskari Saari">
                     <h3>Oskari Saari</h3>
                 </div>
                 <div class="about--info">
@@ -63,7 +62,7 @@
     <div class="projects">
         <div class="projects--normal">
             <a href="http://www.kaarinaniemi.fi">
-                <img src="img/kaarinaniemi.png" alt="">
+                <img src="img/kaarinaniemi.png" alt="Hiusateljee Kaarina Niemi logo">
             </a>
             <div>
                 <a href="http://www.kaarinaniemi.fi"><h3>Hiusateljee Kaarina Niemi</h3></a>
@@ -74,12 +73,12 @@
                 We might add product cataloging and other improvements on the site in the near future.</p>
 
                 <p>Languages used: HTML, CSS, JavaScript, PHP</p>
-                <p>Technologies used: jQuery, Bootstrap, npm scripts, PostCSS, Git</p>
+                <p>Tools used: jQuery, Bootstrap, npm scripts, PostCSS, Git</p>
             </div>
         </div>
         <div class="projects--reverse">
             <a href="http://www.oljemark.com">
-                <img src="img/oljemark_logo.png" alt="">
+                <img src="img/oljemark_logo.png" alt="Mainostoimisto Oljemark logo">
             </a>
             <div>
                 <a href="http://www.oljemark.com"><h3>Mainostoimisto Oljemark</h3></a>
@@ -88,12 +87,12 @@
                 Occasionally I did some graphic design work on advertisements.
                 I got to also work on website cache and SEO optimization and user analytics.</p>
                 <p>Languages used: HTML, CSS, JavaScript, PHP</p>
-                <p>Technologies used: WordPress, jQuery, Git, Photoshop, inDesign, Illustrator</p>
+                <p>Tools used: WordPress, jQuery, Git, Photoshop, inDesign, Illustrator</p>
             </div>
         </div>
         <div class="projects--normal">
             <a href="http://www.kyamk.fi/Ty%C3%B6el%C3%A4m%C3%A4lle/Projektit/KymiDesign%26Business/">
-                <img src="img/kyamk.png" alt="">
+                <img src="img/kyamk.png" alt="KyAMK logo">
             </a>
             <div>
                 <a href="http://www.kyamk.fi/Ty%C3%B6el%C3%A4m%C3%A4lle/Projektit/KymiDesign%26Business/"><h3>Kymi Design & Business</h3></a>
@@ -104,7 +103,7 @@
                 Others were made with WordPress by making a custom theme from start to finish.
                 The internship was also an invaluable learning experience in customer interaction and teamwork.
                 <p>Languages used: HTML, CSS, PHP</p>
-                <p>Technologies used: WordPress, jQuery</p>
+                <p>Tools used: WordPress, jQuery</p>
             </div>
         </div>
     </div>

@@ -1,4 +1,3 @@
-<!-- footer.php -->
 <footer>
     <div>
         <a href="https://github.com/okkuweb/portfolio">

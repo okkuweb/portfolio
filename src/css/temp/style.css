@@ -523,16 +523,19 @@ header {
         align-items: center; }
         .about--image img {
           margin: 0; } }
-  .about--info {
-    max-width: 40rem; }
-    .about--info h4, .about--info p {
-      text-align: left; }
-      @media screen and (min-width: 460px) {
-        .about--info h4, .about--info p {
-          padding-left: 40px; } }
-      @media screen and (min-width: 960px) {
-        .about--info h4, .about--info p {
-          padding-left: 0; } }
+  .about--info h4 {
+    max-width: 34rem;
+    text-align: center; }
+    @media screen and (min-width: 960px) {
+      .about--info h4 {
+        text-align: left; } }
+  .about--info p {
+    max-width: 34rem;
+    text-align: left;
+    padding-left: 5%; }
+    @media screen and (min-width: 960px) {
+      .about--info p {
+        padding-left: 0; } }
 
 .skills {
   display: flex;
@@ -616,13 +619,12 @@ header {
       .projects--reverse {
         flex-direction: row-reverse; } }
     .projects--reverse img {
-      margin-top: 2rem;
       max-width: 200px;
       max-height: 141.45px; }
     .projects--reverse div {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: flex-start; }
       @media screen and (min-width: 560px) {
         .projects--reverse div {
           margin-right: 2rem;
@@ -631,9 +633,13 @@ header {
         margin: 0;
         font-style: normal; }
       .projects--reverse div a {
-        text-decoration: none; }
+        text-decoration: none;
+        margin: 0 auto; }
         .projects--reverse div a:hover h3 {
           color: #87A752; }
+        @media screen and (min-width: 560px) {
+          .projects--reverse div a {
+            margin: 0 0; } }
 
 .contact {
   display: flex;

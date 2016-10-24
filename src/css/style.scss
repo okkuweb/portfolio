@@ -208,16 +208,23 @@ header {
         }
     }
     &--info {
-        h4, p {
-            text-align: left;
-            @media screen and (min-width: 460px) {
-                padding-left: 40px;
+        h4 {
+            max-width: 34rem;
+            text-align: center;
+            @media screen and (min-width: 960px) {
+                text-align: left;
             }
+        }
+        p {
+            max-width: 34rem;
+            text-align: left;
+            padding-left: 5%;
+            @media screen and (min-width: 400px) {
+        }
             @media screen and (min-width: 960px) {
                 padding-left: 0;
             }
         }
-            max-width: 40rem;
     }
 }
 
@@ -327,14 +334,13 @@ header {
             flex-direction: row-reverse;
         }
         img {
-            margin-top: 2rem;
             max-width: 200px;
             max-height: 141.45px;
         }
         div {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             @media screen and (min-width: 560px) {
                 margin-right: 2rem;
                 align-items: flex-start;
@@ -345,10 +351,14 @@ header {
             }
             a {
                 text-decoration: none;
+                margin: 0 auto;
                 &:hover {
                     h3 {
                         color: $link;
                     }
+                }
+                @media screen and (min-width: 560px) {
+                    margin: 0 0;
                 }
             }
         }
