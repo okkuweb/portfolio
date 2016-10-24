@@ -108,7 +108,7 @@ footer p {
         </style>
         <?php include 'loadcss.php' ?>
         <script type="text/javascript">loadCSS("css/style.css")</script>
-        <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+        <noscript><link rel="stylesheet" href="css/style.css"><style>header{position:absolute;}</style></noscript>
     </head>
     <body>
         <header id="header__large">
