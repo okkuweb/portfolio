@@ -417,7 +417,8 @@ a {
     color: #344020; }
 
 li {
-  color: #4C4C4C; }
+  color: #4C4C4C;
+  font-family: 'heebo', sans-serif; }
 
 span {
   color: #87A752; }
