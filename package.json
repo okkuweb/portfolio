@@ -36,7 +36,7 @@
     "cssnano": "^3.7.5",
     "glob": "^7.1.1",
     "lost": "^7.1.0",
-    "node-sass": "^3.10.1",
+    "node-sass": "^4.14.1",
     "nodemon": "^1.10.2",
     "postcss-cli": "^2.6.0",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
